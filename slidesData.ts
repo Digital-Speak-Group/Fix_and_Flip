@@ -99,7 +99,7 @@ export const slidesData: SlideData[] = [
     title: 'Comment j\'ai trouvé 24 000 €',
     content: "J'ai acheté une voiture à crédit, je l'ai revendue cash plus cher le lendemain. J'avais mon apport. C'est ça, l'état d'esprit 'Débrouillard'.",
     visual: "https://storage.googleapis.com/msgsndr/V6O5PUGvOCgJ5Ja3Lp95/media/694abd65147f511e58d73dc6.jpg",
-    script: 'JT : "L\'état d\'esprit débrouillard quand les banques disent non."'
+    // script: 'JT : "L\'état d\'esprit débrouillard quand les banques disent non."'
   },
   {
     id: 10,
@@ -159,7 +159,7 @@ export const slidesData: SlideData[] = [
     title: '"J\'ai mis 10 ans à comprendre ça."',
     content: "Vous pouvez le faire en 12 mois. Je cherche des partenaires pour aller plus vite. C'est pour ça que vous êtes là.",
     visual: "https://storage.googleapis.com/msgsndr/V6O5PUGvOCgJ5Ja3Lp95/media/694ac3dd21432b77a0893049.png",
-    script: 'JT : "L\'émotion tue le deal. La distance vous protège."'
+    // script: 'JT : "L\'émotion tue le deal. La distance vous protège."'
   },
   {
     id: 16,
@@ -202,8 +202,8 @@ export const slidesData: SlideData[] = [
     id: 20,
     type: 'title',
     title: 'LE "USA FIX & FLIP OPERATING SYSTEM™"',
-    subtitle: 'Les 3 Piliers pour réussir.',
-    content: 'Partie 2 (La Méthode), Partie 3 (L\'Offre) et Partie 4 (Q&A).',
+    // subtitle: 'Les 3 Piliers pour réussir.',
+    content: 'Les 3 Piliers pour réussir.',
     visual: THEME_IMAGES.MODERN_HOUSE
   },
   {
@@ -293,7 +293,7 @@ export const slidesData: SlideData[] = [
   {
     id: 30,
     type: 'content',
-    title: "L'erreur : Gérer le chantier soi-même via WhatsApp",
+    title: "L'erreur : Gérer le chantier \nsoi-même via WhatsApp",
     content: "Gérer soi-même à 6000km est un suicide financier. Entrepreneurs qui dorment, budgets qui explosent.",
     icon: 'attention',
     visual: undefined
@@ -314,7 +314,7 @@ export const slidesData: SlideData[] = [
     type: 'comparison',
     title: 'Le Résultat (Avant/Après)',
     content: "Transformation en 90 jours chrono.",
-    visual: 'https://storage.googleapis.com/msgsndr/V6O5PUGvOCgJ5Ja3Lp95/media/694acff7d57350086fe74869.jpg|https://storage.googleapis.com/msgsndr/V6O5PUGvOCgJ5Ja3Lp95/media/694acff7147f51fe6ad9d355.jpg',
+    visual: 'https://storage.googleapis.com/msgsndr/V6O5PUGvOCgJ5Ja3Lp95/media/694acff7147f51fe6ad9d355.jpg | https://storage.googleapis.com/msgsndr/V6O5PUGvOCgJ5Ja3Lp95/media/694acff7d57350086fe74869.jpg',
     visualDescription: 'Avant: Cuisine vétuste | Après: Design moderne & Staging'
   },
   {
