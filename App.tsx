@@ -92,7 +92,7 @@ const App: React.FC = () => {
         />
       </div>
 
-      <div className="absolute top-0 left-10 flex flex-col z-50 select-none">
+      <div className="absolute -top-6 left-0 right-0 m-auto w-fit flex flex-col z-50 select-none">
         <img src="https://storage.googleapis.com/msgsndr/V6O5PUGvOCgJ5Ja3Lp95/media/694ab000147f51ea33d56ce7.png" alt="FIX & FLIP SYSTEM US" className="w-32 h-32 object-contain" />
       </div>
 
