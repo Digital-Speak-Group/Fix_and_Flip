@@ -138,7 +138,7 @@ const App: React.FC = () => {
 
                 <motion.h1 
                   className={`font-black leading-[1.05] mb-10 text-white tracking-tighter ${
-                    isTitleSlide ? 'text-6xl md:text-9xl' : 'text-4xl md:text-6xl'
+                    isTitleSlide ? 'text-6xl min-[1372]:text-9xl md:text-8xl' : 'text-3xl md:text-5xl'
                   }`}
                 >
                   {slide.title?.split(' ').map((word, i) => {
@@ -171,12 +171,12 @@ const App: React.FC = () => {
                           initial={{ opacity: 0, x: isCentered ? 0 : -15, y: isCentered ? 15 : 0 }}
                           animate={{ opacity: 1, x: 0, y: 0 }}
                           transition={{ delay: 0.4 + idx * 0.1 }}
-                          className={`flex items-center gap-6 glass-panel p-6 rounded-[28px] border border-white/5 hover:bg-white/10 transition-all group ${isCentered ? 'justify-center text-center' : ''}`}
+                          className={`flex items-center gap-6 glass-panel p-6 rounded-[28px] border border-white/5 hover:bg-white/10 transition-all group ${isCentered ? 'justify-self-start text-center w-full' : ''}`}
                         >
-                          <div className="w-14 h-14 shrink-0 rounded-2xl bg-[#CF1F25] flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-transform group-hover:rotate-6">
+                          <div className="w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-2xl bg-[#CF1F25] flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-transform group-hover:rotate-6">
                             <CheckCircle2 size={28} strokeWidth={3} />
                           </div>
-                          <span className="text-xl md:text-2xl text-zinc-100 font-bold tracking-tight">{item}</span>
+                          <span className="text-lg md:text-xl text-zinc-100 font-bold tracking-tight">{item}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -185,7 +185,7 @@ const App: React.FC = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.4 }}
-                      className={`text-xl md:text-3xl text-zinc-300 leading-relaxed p-12 rounded-[40px] glass-panel border border-white/10 shadow-2xl ${isCentered ? 'mx-auto' : ''}`}
+                      className={`text-xl md:text-2xl text-zinc-300 leading-relaxed p-10 rounded-[40px] glass-panel border border-white/10 shadow-2xl ${isCentered ? 'mx-auto' : ''}`}
                     >
                       {slide.content}
                     </motion.div>
@@ -212,7 +212,7 @@ const App: React.FC = () => {
                   initial={{ opacity: 0, x: 100, scale: 0.9 }}
                   animate={{ opacity: 1, x: 0, scale: 1 }}
                   transition={{ delay: 0.4, type: 'spring', damping: 20 }}
-                  className={`relative w-full flex items-center justify-center ${isReel ? 'h-full' : 'h-[550px] lg:h-[800px]'}`}
+                  className={`relative w-full flex items-center justify-center ${isReel ? 'h-full' : 'h-[550px] md:h-[650px] min-[1372px]:h-[800px]'}`}
                 >
                   <div className={`absolute inset-0 bg-gradient-to-tr from-[#CF1F25]/30 to-transparent rounded-[56px] blur-[100px] -z-10 translate-x-12 translate-y-12 ${isReel ? 'opacity-50' : ''}`} />
                   
