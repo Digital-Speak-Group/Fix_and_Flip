@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webinaire Fix & Flip System - JT Mugabo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #050505;
+        color: #ffffff;
+        margin: 0;
+        overflow: hidden;
+      }
+      .gradient-red {
+        background: linear-gradient(135deg, #CF1F25 0%, #7A0C10 100%);
+      }
+      .text-glow {
+        text-shadow: 0 0 30px rgba(207, 31, 37, 0.5);
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .mesh-bg {
+        background-color: #050505;
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(358, 74%, 25%, 0.15) 0px, transparent 50%),
+          radial-gradient(at 100% 100%, hsla(358, 74%, 25%, 0.15) 0px, transparent 50%),
+          radial-gradient(at 50% 50%, hsla(0, 0%, 10%, 0.5) 0px, transparent 80%);
+      }
+      .slide-shadow {
+        box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.8);
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .floating {
+        animation: float 6s ease-in-out infinite;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
