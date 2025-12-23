@@ -217,7 +217,7 @@ const App: React.FC = () => {
                               alt="Comparison"
                             />
                             <div className="absolute top-8 left-8 bg-black/50 backdrop-blur-md px-6 py-2 rounded-full border border-white/10 text-white font-black uppercase text-xs tracking-widest">
-                              {idx === 0 ? 'AVANT' : 'APRÈS'}
+                              {idx === 0 ? 'APRÈS' : 'AVANT'}
                             </div>
                           </div>
                         ))}
@@ -349,7 +349,7 @@ const App: React.FC = () => {
         </AnimatePresence>
       </div>
 
-      <div className="absolute bottom-12 left-12 right-12 flex items-center justify-between z-50">
+      <div className="absolute bottom-2 left-12 right-12 flex items-center justify-between z-50">
         <div className="flex items-center gap-10">
           <div className="px-10 py-5 rounded-[30px] bg-white/5 border border-white/10 flex items-center gap-10 shadow-2xl backdrop-blur-md">
             <span className="text-zinc-500 font-black text-lg tabular-nums tracking-widest">
