@@ -467,7 +467,7 @@ export const slidesData: SlideData[] = [
   {
     id: 46,
     type: 'results',
-    title: 'Scarcity (Rareté réelle)',
+    // title: 'Scarcity (Rareté réelle)',
     content: [
       "Ouverture de la CUVÉE 2025.",
       "Limité à 30 PARTENAIRES maximum.",
