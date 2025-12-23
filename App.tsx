@@ -124,17 +124,17 @@ const App: React.FC = () => {
 
                 <motion.h1 
                   className={`font-black leading-[1.05] mb-10 text-white tracking-tighter ${
-                    isTitleSlide ? 'text-6xl md:text-9xl' : 'text-4xl md:text-7xl'
+                    isTitleSlide ? 'text-6xl md:text-9xl' : 'text-4xl md:text-6xl'
                   }`}
                 >
                   {slide.title?.split(' ').map((word, i) => {
-                    const isAccent = ['USA', 'PROFITS', 'FLIP', 'SYSTEM', '50', '100', 'CASH', 'LIBERTÉ', 'MÉTHODE', 'CLEAN', 'RÉSULTATS', 'PAS', 'VIDÉO', 'BRUNHILDA', 'MÉTAMORPHOSE', 'AVANT/APRÈS'].includes(word.toUpperCase().replace(/[^A-Z0-9]/g, ''));
-                    return (
-                      <span key={i} className={isAccent ? 'text-[#CF1F25] text-glow' : ''}>
-                        {word}{' '}
-                      </span>
-                    );
-                  })}
+                          const isAccent = ['USA', 'PROFITS', 'FLIP', 'SYSTEM', '50', '100', 'CASH', 'LIBERTÉ', 'MÉTHODE', 'CLEAN', 'RÉSULTATS', 'PAS', 'VIDÉO', 'BRUNHILDA', 'MÉTAMORPHOSE', 'AVANT/APRÈS'].includes(word.toUpperCase().replace(/[^A-Z0-9]/g, ''));
+                          return (
+                            <span key={i} className={isAccent ? 'text-[#CF1F25] text-glow' : ''}>
+                              {word}{' '}
+                            </span>
+                          );
+                        })}
                 </motion.h1>
 
                 {slide.subtitle && (
@@ -217,7 +217,7 @@ const App: React.FC = () => {
                               alt="Comparison"
                             />
                             <div className="absolute top-8 left-8 bg-black/50 backdrop-blur-md px-6 py-2 rounded-full border border-white/10 text-white font-black uppercase text-xs tracking-widest">
-                              {idx === 0 ? 'APRÈS' : 'AVANT'}
+                              {idx === 0 ? 'AVANT' : 'APRÈS'}
                             </div>
                           </div>
                         ))}
@@ -288,7 +288,7 @@ const App: React.FC = () => {
                         >
                           <AlertTriangle size={160} className="text-[#CF1F25] drop-shadow-[0_0_50px_rgba(207,31,37,0.8)]" />
                         </motion.div>
-                        <h2 className="text-7xl font-black text-white uppercase tracking-tighter mb-8">MYTHE RÉVÉLÉ</h2>
+                        <h2 className="text-6xl font-black text-white uppercase tracking-tighter mb-8">MYTHE RÉVÉLÉ</h2>
                         <p className="text-zinc-400 text-3xl font-light tracking-tight max-w-xl">Détruisons les croyances qui limitent votre succès.</p>
                       </div>
                     )}
@@ -349,7 +349,7 @@ const App: React.FC = () => {
         </AnimatePresence>
       </div>
 
-      <div className="absolute bottom-2 left-12 right-12 flex items-center justify-between z-50">
+      <div className="absolute bottom-4 left-12 right-12 flex items-center justify-between z-50">
         <div className="flex items-center gap-10">
           <div className="px-10 py-5 rounded-[30px] bg-white/5 border border-white/10 flex items-center gap-10 shadow-2xl backdrop-blur-md">
             <span className="text-zinc-500 font-black text-lg tabular-nums tracking-widest">
