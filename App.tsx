@@ -58,6 +58,20 @@ const App: React.FC = () => {
   const isTitleSlide = slide.type === 'title';
   const isCTASlide = slide.type === 'cta';
   
+  // Helper to wrap money amounts (e.g. "50 000 $") in a span so they can be styled
+  const moneyRegex = /\d{1,3}(?:\s\d{3})*\s\$/;
+  const renderWithMoneySpans = (text?: string | undefined) => {
+    if (!text) return null;
+    const parts = text.split(new RegExp(`(${moneyRegex.source})`));
+    return parts.map((part, i) => (
+      moneyRegex.test(part) ? (
+        <span key={i} className="text-[#CF1F25] font-black">{part}</span>
+      ) : (
+        <React.Fragment key={i}>{part}</React.Fragment>
+      )
+    ));
+  };
+
   const hasVisual = !!slide.visual || !!slide.visualDescription;
   const hasVideo = !!slide.video;
   const isCentered = isTitleSlide || isCTASlide || !hasVisual;
@@ -139,13 +153,13 @@ const App: React.FC = () => {
 
                 {slide.subtitle && (
                   <motion.p 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className={`text-xl md:text-3xl text-zinc-400 font-light mb-14 leading-relaxed ${isCentered ? 'max-w-4xl mx-auto' : ''}`}
-                  >
-                    {slide.subtitle}
-                  </motion.p>
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.3 }}
+                      className={`text-xl md:text-3xl text-zinc-400 font-light mb-14 leading-relaxed ${isCentered ? 'max-w-4xl mx-auto' : ''}`}
+                    >
+                      {renderWithMoneySpans(slide.subtitle)}
+                    </motion.p>
                 )}
 
                 <div className="space-y-6 w-full">

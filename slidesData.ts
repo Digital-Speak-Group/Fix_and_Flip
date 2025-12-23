@@ -53,7 +53,7 @@ export const slidesData: SlideData[] = [
     title: 'Beaucoup pensent qu\'il faut être riche...',
     content: 'La vérité ? J\'ai commencé en étant viré de ma banque, et j\'ai financé mes débuts en revendant une voiture à crédit. Aujourd\'hui, je ne paie même plus de loyer aux USA grâce à mes flips.',
     visual: THEME_IMAGES.JT_CHILL,
-    script: 'JT : "J\'ai commencé en étant viré, aujourd\'hui je ne paie plus de loyer."'
+    // script: 'JT : "J\'ai commencé en étant viré, aujourd\'hui je ne paie plus de loyer."'
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ export const slidesData: SlideData[] = [
     title: '"Je gérais des milliards... pour les autres."',
     content: "Je valorisais des produits dérivés complexes. Je gagnais bien ma vie (6 000 €/mois), mais j'étais un esclave de luxe. Je savais que je n'étais pas libre.",
     visual: THEME_IMAGES.FINANCE_BARCLAYS,
-    script: 'JT : "Esclave de luxe. Climatisation, clavier, pression."'
+    // script: 'JT : "Esclave de luxe. Climatisation, clavier, pression."'
   },
   {
     id: 7,
